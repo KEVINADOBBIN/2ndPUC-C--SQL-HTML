@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Details</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ATTENDANCE DETAILS:</h1>
+    <h3>SUBJECT: COMPUTER SCIENCE</h3>
+
+    <table width="450px">
+        <tr>
+            <th>Month</th>
+            <th>No of Classes Held</th>
+            <th>No of Classes Attended</th>
+        </tr>
+
+        <tr><th>JUNE</th><th>08</th><th></th></tr>
+        <tr><th>JULY</th><th>16</th><th></th></tr>
+        <tr><th>AUGUST</th><th>16</th><th></th></tr>
+        <tr><th>SEPTEMBER</th><th>16</th><th></th></tr>
+        <tr><th>OCTOBER</th><th>08</th><th></th></tr>
+        <tr><th>NOVEMBER</th><th>16</th><th></th></tr>
+        <tr><th>DECEMBER</th><th>16</th><th></th></tr>
+        <tr><th>JANUARY</th><th>16</th><th></th></tr>
+        <tr><th>FEBRUARY</th><th>08</th><th></th></tr>
+
+        <tr><th>Total No of Days</th><th>120</th><th></th></tr>
+        <tr><th>Percentage</th><th></th><th></th></tr>
+    </table>
+
+    <br><br>
+
+    <form name="niform" method="post" action="html_form_send.php">
+        <table width="450px">
+            <tr>
+                <td align="left">Student Name *</td>
+                <td><input type="text" name="student_name" size="30"></td>
+            </tr>
+
+            <tr>
+                <td align="left">Student ID *</td>
+                <td><input type="text" name="student_id" size="30"></td>
+            </tr>
+
+            <tr>
+                <td align="left">Father Name</td>
+                <td><input type="text" name="father_name" size="30"></td>
+            </tr>
+
+            <tr>
+                <td align="left">Email Address *</td>
+                <td><input type="email" name="email" size="30"></td>
+            </tr>
+
+            <tr>
+                <td align="left">Telephone Number</td>
+                <td><input type="text" name="telephone" size="30"></td>
+            </tr>
+
+            <tr>
+                <td align="left">Comments *</td>
+                <td>
+                    <textarea name="comments" cols="25" rows="6"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
