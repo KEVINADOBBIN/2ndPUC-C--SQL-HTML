@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-// Inline function to calculate cube
-inline int cube(int a)
-{
+// Inline function
+inline int cube(int a) {
     return a * a * a;
 }
 
-int main()
-{
+int main() {
     int x, y;
 
     cout << "Enter a number: ";
