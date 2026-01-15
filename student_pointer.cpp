@@ -1,41 +1,39 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-class Student
-{
+class Student {
 private:
-    int regNo;
-    string name;
+    int regno;
+    char name[20];
     float fees;
 
 public:
-    void get()
-    {
+    void get() {
         cout << "Enter student register number: ";
-        cin >> regNo;
-        cin.ignore(); // Clear newline from buffer
+        cin >> regno;
+
         cout << "Enter student name: ";
-        getline(cin, name);
+        cin >> name;
+
         cout << "Enter student fees: ";
         cin >> fees;
     }
 
-    void display()
-    {
-        cout << "Student register number: " << regNo << endl;
-        cout << "Student name: " << name << endl;
-        cout << "Student fees: " << fees << endl;
+    void display() {
+        cout << "\nStudent Register Number: " << regno << endl;
+        cout << "Student Name: " << name << endl;
+        cout << "Student Fees: " << fees << endl;
     }
 };
 
-int main()
-{
+int main() {
     Student s;
-    Student* sp = &s; // Pointer to object
+    Student *ptr;
 
-    sp->get();       // Access member function using pointer
-    sp->display();   // Access member function using pointer
+    ptr = &s;   // pointer to object
+
+    ptr->get();       // accessing members using pointer
+    ptr->display();
 
     return 0;
 }
